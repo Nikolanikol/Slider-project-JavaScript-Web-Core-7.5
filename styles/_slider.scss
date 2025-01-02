@@ -1,0 +1,52 @@
+// .swiper {
+//     border-radius: 20px;
+// }
+// .swiper-button-next,.swiper-button-prev, .swiper-scrollbar{
+//   display: none;
+// }
+// .swiper-pagination {
+//   position: inherit;
+// }
+// .slider{
+//     margin-bottom: 16px;
+//   &__row{
+//       width: 100%;
+//       padding: 16px 20px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       background-color: #fff;
+
+//   }
+//   &__btn{
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border: 2px solid $btn-red-color;
+//       border-radius: 50%;
+//       width: 40px;
+//       height: 40px;
+//       cursor: pointer;
+//       z-index: 1;
+//       position: relative;
+//       top: 0;
+//        &:hover{
+//           top: 3px;
+
+//        }
+//   }
+//   &__item{
+
+//     // max-width: 240px;
+//     height: 72px;
+
+//       // border: 1px solid red;
+//   }
+// }
+// .swiper-slide {
+//   display: flex; /* Центрирование содержимого слайда */
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   background: #eee; /* Фон для теста */
+// }

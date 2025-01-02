@@ -1,0 +1,265 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.mobile-slider {
+  display: none;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-scrollbar {
+  display: none;
+}
+
+.slider__row-hide {
+  display: none !important;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-pagination {
+  position: relative;
+  padding-top: 20px;
+}
+
+.swiper-wrapper {
+  height: 72px;
+  position: relative;
+  left: -25px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #818184;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-slide {
+  display: block;
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 230px;
+}
+
+.slider {
+  margin-bottom: 16px;
+}
+.slider__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.slider__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  top: 0;
+}
+.slider__btn:hover {
+  top: 3px;
+}
+
+.slider__wrapper {
+  padding: 16px;
+  background-color: #F8F8F8;
+}
+
+.slider-section__title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  padding: 16px;
+}
+
+@media (max-width: 25000px) {
+  .brand-items__row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 16px;
+  }
+  .slider__row {
+    max-width: 240px;
+  }
+}
+@media (max-width: 1120px) {
+  .brand-items__row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 16px;
+  }
+  .slider__row {
+    max-width: 240px;
+  }
+  .slider-section__title {
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    background-color: #fff;
+  }
+  .brand-items {
+    padding: 24px 32px;
+    background-color: #F8F8F8;
+  }
+  .brand-items__button {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .slider-section__title {
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 40px;
+  }
+  .slider__row {
+    max-width: 22px !important;
+    min-width: 200px;
+    height: 72px;
+    border: 2px solid #EAEAEA;
+    border-radius: 20px;
+    padding: 16px;
+    max-width: 224px;
+  }
+  .brand-items {
+    background-color: #F8F8F8;
+    padding-bottom: 200px;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+  .brand-items__row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+  }
+  .brand-items__button {
+    position: relative;
+    top: 0;
+    margin-top: 24px;
+    padding-left: 33px;
+    line-height: 24px;
+  }
+  .brand-items__button::before {
+    content: "";
+    background-image: url("../icons/arrow-button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+  }
+  .brand-items__button:hover {
+    top: 3px;
+  }
+}
+@media (max-width: 320px) {
+  .brand-items {
+    display: none;
+  }
+  .mobile-slider {
+    display: block;
+  }
+}/*# sourceMappingURL=style.min.css.map */
